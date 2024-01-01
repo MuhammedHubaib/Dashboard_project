@@ -1,0 +1,429 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family:'proxima-nova', sans-serif;
+}
+
+header {
+    width: 1223px;
+    height: 45px;
+    color: #fff;
+    padding: 10px 0;
+    padding: 19.5px 20px 19.5px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-left {
+    width: 100px;
+    height: 32.787px;
+    margin: 0;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    width: 330px;
+    height: 35px;
+    border-radius: 5px ;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    padding-top: auto;
+    padding-left: 10px;
+    padding-right: 6px;
+    padding-bottom: auto;
+}
+
+.search {
+    display: inline;
+}
+
+#search-input {
+    border: 0px;
+    outline: none; /* Remove the input outline */
+    width: 280px; /* Adjust as needed */
+}
+
+#notification-btn {
+    margin: 0px 25px 0px 20px;
+}
+
+#settings-btn {
+    margin-left: 25px;
+}
+
+#settings-btn,#notification-btn,#profile-btn:hover{
+    cursor: pointer;
+}
+
+.left-inside-box{
+    display: flex;
+    margin-bottom: 20px;
+    height: fit-content;
+}
+ul{
+    list-style: none;
+    padding-left: 5px;
+}
+.nav-div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.nav-text {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+}
+#arrow-dash{
+    padding-left: 30px;
+}
+#arrow-product{
+    padding-left: 52px;
+}
+#arrow-category{
+    padding-left: 43px;
+}
+#arrow-report{
+    padding-left: 59px;
+}
+
+/* Add some hover effect to the navigation items */
+.nav-div:hover {
+    background-color: #0083C01A;
+    cursor: pointer;
+}
+.nav-div:hover a {
+    color:#0082cb;
+}
+.text-dec{
+    text-decoration: none;
+    color: black;
+}
+/* Change color of nav-icon on hover */
+.nav-div:hover .nav-icon {
+    filter:invert(54%) sepia(76%) saturate(2451%) hue-rotate(189deg) brightness(92%) contrast(89%);
+}
+  
+  /* Change color of arrow icon on hover */
+.nav-div:hover .arrow {
+    filter:invert(54%) sepia(76%) saturate(2451%) hue-rotate(189deg) brightness(92%) contrast(89%);
+}
+
+.container {
+    display: flex;
+    position: relative;
+    width: 200px;
+    min-height: 140px;
+    max-height: 165px;
+    background: linear-gradient(179deg, #006899 0.7%, #00C092 99.31%);
+    border-radius: 20px;
+    padding:25px 5px 5px 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-top:167px;
+    margin-bottom: 30px;
+  }
+
+.heading{
+    margin-bottom: auto;
+    margin-top: 5px;
+    font-size: 16px;
+}
+.para{
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.text-inside {
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis;
+    color: rgb(235, 225, 225); /* Display ellipsis (...) for overflow text */
+    font-weight:lighter;
+}
+
+
+.circle {
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%); /* Center the circle horizontally */
+    width: 60px;
+    height: 60px;
+    background-color: #0083C0; /* Circle color */
+    border-radius: 50%;
+    border: #fff 5px solid;
+    z-index: 1; /* Ensure the circle is above the container content */
+}
+.left-card {
+    display: flex;
+    flex-direction: column;
+    width: 200px; /* Adjust as needed */
+    height: 600px; /* Adjust as needed */
+    padding: 16px 19px 30px 16px;
+    border-right:  1px solid #ddd;
+}
+.main-div{
+    display: flex;
+}
+.left-bar-lower{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+}
+.breadcrumb{
+    display: flex;
+    padding: 15px 0px 0px 20px;
+}
+.slash{
+    color:#66718C;
+}
+.left-arrow:hover{
+    cursor: pointer;
+}
+.dash-txt{
+    color:#66718C;
+    font-weight: 400;
+    margin-left: 8px;
+    margin-right: 4px;
+}
+.dash-txt:hover{
+    cursor: pointer;
+}
+.product-txt{
+    color: var(--grey-90034303-e, #202532);
+    font-weight: 600;
+    margin-left: 8px;
+}
+.product-txt:hover{
+    cursor:pointer;
+}
+.head-txt{
+    color: var(--normal-active, #3D4C5E);
+    font-weight: 600;
+    margin: 9px 0px 0px 23px;
+
+}
+.search-box-one {
+    width: 230px;
+    height: 35px;
+    border-radius: 5px ;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    margin: 17px;
+}
+#search-input-one {
+    border: 0px;
+    outline: none; /* Remove the input outline */
+    width: 189px; /* Adjust as needed */
+}
+.inner-first-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.filter{
+    display: flex;
+    border: grey 1px solid;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 35px;
+    border-radius: 5px;
+}
+.filter-icon{
+    height: 20px;
+    width: 20px;
+    margin: auto 0px auto 0px;
+    padding-right: 10px;
+}
+.filter-txt{
+    margin: auto 0px auto 0px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.vector-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0px auto 0px;
+    border-radius:5px;
+    border: 1px solid;
+    height: 37px;
+    width: 130px;
+    padding-left: 10px;
+    background-color:#0083C0 ; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 540px;
+
+}
+.vector-button:active {
+    background-color: #3498db; /* Change the background color on click */
+  }
+.button-icon{
+
+    margin-left: 5px;
+
+}
+.filter:hover{
+    cursor: pointer;
+}
+.filter:active{
+    background-color: rgb(231, 227, 227);
+}
+table {
+    border-collapse: collapse;
+    width: 98%;
+    margin: 5px 20px 0px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+th, td {
+    padding: 10px;
+    text-align:left;
+    border-bottom: 1px solid  rgba(226, 229, 233, 0.60);;
+
+}
+
+th {
+    background-color: #F5F9FF;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+td{
+    font-size: 14px;
+    color: #546881;
+    font-weight: lighter;
+}
+
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+.lower-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12px 0px 30px 24px;
+}
+.lower-left-div{
+    display: flex;
+}
+.lower-txt{
+    font-size: 12px;
+    font-weight: bold;
+    margin:auto 16px auto 25px;
+    color: #344054;
+
+}
+.lower-btn {
+    color: #344054;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 14px;
+    padding-right: 10px !important;
+    border-radius: 8px;
+    height: 40px;
+}
+.lower-right-div{
+    display: flex;
+    margin-right: 25px;
+}
+.pervious-btn{
+    display: flex;
+    align-items: center;
+    width: 114px;
+    height: 40px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border: 1px solid #A3ADBB;
+    color:#344054;
+    background-color: #fff;
+    font-weight: bold;
+    border-right: 0px;
+
+}
+.left-down-arrow{
+    width: 16px;
+    height: 16px;
+    margin: auto 8px auto 8px;
+
+}
+.num-btn{
+    width: 45px;
+    height: 40px;
+    border: 1px solid #A3ADBB;
+    color:#1D2939;
+    background-color: #fff;
+    font-weight: bold;
+    border-right: 0px;
+}
+.right-arrow{
+    width: 16px;
+    height: 16px;
+    margin: auto 8px auto 8px;
+}
+.nxt-btn{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+    border: 1px solid #A3ADBB;
+    color: #344054;
+    background-color: #fff;
+    font-weight: bold
+}
+.next-txt{
+    margin-left: 16px;
+}
+
+.num-btn:hover,
+.lower-btn:hover,
+.nxt-btn:hover,
+.pervious-btn:hover {
+    background-color: rgb(252, 247, 247);
+}
+.num-btn:active,
+.lower-btn:active,
+.nxt-btn:active,
+.pervious-btn:active{
+    background-color: rgb(241, 241, 241);
+}
